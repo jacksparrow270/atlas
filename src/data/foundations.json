@@ -1,0 +1,98 @@
+[
+  [
+    "Python executes instructions using a selected interpreter. A virtual environment gives one project its own installed packages; it does not install a second language. Check the executable path before debugging a mysterious missing module.",
+    "A variable is a name bound to an object, not a box with a fixed type. Reassigning a name changes the binding. Use type() to inspect values and predict results before running expressions.",
+    "Keyboard input is text even when the user types digits. Convert at the boundary of your program, then keep internal arithmetic numeric. Invalid text must be diagnosed rather than silently interpreted.",
+    "Division / produces a floating-point result; // computes floor division and % the remainder. Parentheses make evaluation order explicit. Test negative values because floor division rounds down, not toward zero.",
+    "An f-string evaluates expressions inside braces. A format specification such as :.2f controls display, not stored precision. Keep computation separate from the final formatted receipt.",
+    "A converter has an input contract, a formula and an output unit. Test a known reference point and a value that reverses correctly. A number without a unit can be misleading."
+  ],
+  [
+    "Comparison operators yield Boolean values. Equality compares values while assignment binds names. Numeric-looking strings may compare lexicographically, so convert to numbers before applying numeric rules.",
+    "Indentation defines a branch in Python. The else branch runs when the if condition is false. Checking number % 2 == 0 works for zero and negative integers as well as positive ones.",
+    "and, or and not combine propositions. A truth table enumerates all combinations and helps separate a business rule from its implementation. Use parentheses when the grouping is not obvious.",
+    "An if/elif chain executes the first matching branch. Overlapping ranges must be ordered deliberately. Validate impossible inputs before classifying valid inputs.",
+    "Read the final exception line, then follow the stack to your code. A minimal reproduction removes unrelated behavior. Logic errors need expected outputs because they may produce no traceback.",
+    "Translate each requirement into a concrete rule and boundary test. Keep validation distinct from eligibility. Write expected outcomes first so the implementation is checked against the requirement, not against itself."
+  ],
+  [
+    "range excludes its stop value. A for loop binds the loop variable to each item in turn. When inclusive bounds are required, derive the stop deliberately rather than patching an off-by-one result.",
+    "A while loop needs a condition that can become false. A sentinel is a special input used to stop reading. Handle the sentinel before converting or accumulating it.",
+    "Strings are immutable sequences. Slices have inclusive starts and exclusive stops; negative indices count from the end. An empty slice is valid, but an invalid single index raises IndexError.",
+    "Initialize a counter before iteration and update it only for matching items. The counter should equal the number of matches already seen. This invariant makes the update rule testable.",
+    "The inner loop runs fully for every outer iteration. Multiplying iteration counts is valid when each inner count is fixed. Draw a small table before scaling the loops.",
+    "A text tool combines scanning, normalization and aggregation. Decide whether case, punctuation and Unicode characters matter. State those choices in the output so users understand what was counted."
+  ],
+  [
+    "A function contract describes acceptable inputs, returned values and failure behavior. A small pure function avoids hidden input and output. This makes examples easy to turn into assertions.",
+    "Arguments supply values to parameters at call time. return ends the call and gives the result to its caller. Printing a result is a side effect and cannot replace returning it.",
+    "Lists preserve order and allow mutation. Building a new filtered list is often easier to reason about than deleting elements during iteration. Check that callers still have their original data.",
+    "Dictionary keys identify values uniquely. Assigning the same key updates it. Use a stable student identifier when two people might share a name.",
+    "Separate the command-line interface from calculation functions. The interface parses and displays; the core computes. Then automated tests can call the core without simulating keyboard input.",
+    "A marks tracker needs rules for unknown students, duplicates and empty collections. Average requires a nonempty denominator. Decide validation rules before choosing menu commands."
+  ],
+  [
+    "A context manager closes a file even if an exception occurs. Specify text encoding to make behavior reproducible across machines. Process line endings deliberately and avoid loading huge files unnecessarily.",
+    "CSV is a structured format with quoting rules, not simply text split on commas. The csv module handles embedded commas and quotes. Keep a header and validate required columns.",
+    "Catch the narrow exception you can actually handle. A broad except can hide programming errors. After a failure, preserve valid data and give a useful explanation of what the user can correct.",
+    "JSON represents strings, numbers, Booleans, arrays, objects and null. It does not preserve arbitrary Python objects. After loading, validate the structure before using nested keys.",
+    "Modules create boundaries between responsibilities. Avoid doing interactive work at import time. Use a main guard to keep reusable functions importable by tests.",
+    "Persistence turns a temporary script into a stateful tool. A failed write must not destroy the last valid file. Test missing, empty and malformed files as separate cases."
+  ],
+  [
+    "A class groups state with operations that maintain its invariants. An invariant is a condition such as a nonnegative balance. Validate state transitions, not only construction.",
+    "Composition builds a larger object from smaller collaborating objects. Keep each object's responsibility narrow. Avoid inheritance when the relationship is contains rather than is-a.",
+    "A commit is a named snapshot with a reason for a change. Inspect the staged diff before committing. Never commit secrets, generated dependencies or unrelated personal files.",
+    "A branch names a line of development. Merging combines histories and may require resolving conflicts. Read the resulting code and run tests after a merge, even if Git reports success.",
+    "An assertion compares actual behavior with an independently chosen expectation. Test boundaries and exceptions as well as happy paths. A test that copies the implementation's calculation may repeat its bug.",
+    "A reusable project needs explicit dependencies, setup and a command that runs tests. Verify instructions from a clean environment. A README is part of the interface a future maintainer uses."
+  ],
+  [
+    "An array has a shape and a data type. Unlike a list, a NumPy array stores homogeneous values efficiently. Integer and floating dtypes have different ranges and division behavior.",
+    "Boolean masks select positions where a condition is true. The mask shape must align with the indexed dimension. Inspect both values and shapes after selection.",
+    "Broadcasting aligns dimensions from the right. A pair of dimensions is compatible when they are equal or one is 1. Predict the result shape before allowing implicit expansion.",
+    "The dot product sums pairwise products. A norm measures length according to a chosen definition. Normalize only nonzero vectors and make zero-vector behavior explicit.",
+    "Vectorization moves repeated numeric work into optimized library operations. Compare equal computations and verify outputs before timing. Include allocation overhead when it matters to the real use case.",
+    "Standardization subtracts a training mean and divides by a training standard deviation. Constant columns need a defined fallback. In ML, fitting these statistics on test data causes leakage."
+  ],
+  [
+    "A dataframe has labeled rows and columns. Loading is only the start: inspect types, units and missing-value encodings. A data dictionary records the meaning and provenance of each field.",
+    "Missing values and duplicates have different causes. Dropping them without investigation can bias results. Record how many rows each cleaning rule changes and why that rule is justified.",
+    "Grouping partitions observations and applies an aggregation. Means are sensitive to extreme values; medians summarize the middle rank. Always report sample sizes beside subgroup comparisons.",
+    "SQL SELECT chooses columns, WHERE filters rows and GROUP BY aggregates groups. JOIN combines related tables using keys. Unexpected row multiplication often signals a key or relationship mistake.",
+    "A chart encodes numbers using position, length, color or area. Include units and avoid truncated axes that exaggerate differences. Choose a chart that answers a specific question rather than decorating a report.",
+    "Reproducible analysis links a source dataset to cleaning, calculation and presentation. Keep raw data unchanged and make transformations rerunnable. Distinguish observed associations from causal claims."
+  ],
+  [
+    "A vector can represent a point, displacement or feature list depending on context. Its norm measures magnitude. Dividing a nonzero vector by its norm preserves direction and gives unit length.",
+    "Matrix multiplication applies a linear transformation. Columns show where basis vectors go. Plotting transformed basis vectors makes scaling, rotation and shear easier to interpret.",
+    "The dot product combines lengths and alignment. Cosine similarity divides it by both vector norms. A zero vector has no direction, so its cosine similarity requires an explicit convention.",
+    "For A times B, the number of columns of A must match the number of rows of B. Each output entry is a row-column dot product. Matrix multiplication is generally not commutative.",
+    "A linear system can have no solution, one solution or many. Independence of equations matters more than their count alone. Verify a computed solution by substituting into the original equations.",
+    "Least squares minimizes the sum of squared residuals when equations cannot all be satisfied. The residual is orthogonal to the fitted column space. Prefer stable solvers over explicitly inverting a matrix."
+  ],
+  [
+    "A derivative is a local rate of change. A finite difference approximates it by comparing nearby values. Too large a step introduces approximation error; too small a step can amplify numerical error.",
+    "Differentiate each term using justified rules. A derivative is itself a function, so evaluate it at the requested point. Compare with a numerical estimate as a check, not as a proof.",
+    "A partial derivative varies one coordinate while holding the others fixed. The gradient collects these partials. It points in the direction of steepest local increase under the Euclidean geometry.",
+    "Gradient descent subtracts a step proportional to the gradient. A large learning rate can overshoot or diverge. Plot loss over iterations and define a stopping rule before interpreting convergence.",
+    "Linear search inspects items in order; binary search repeatedly halves a sorted search interval. Binary search needs a maintained interval invariant. Empty inputs and duplicates expose boundary mistakes.",
+    "Optimization experiments should change one factor at a time. Record the starting point, learning rate, iterations and loss. A visually smooth curve does not alone establish a correct implementation."
+  ],
+  [
+    "A distribution describes how values are spread. Mean, median and standard deviation summarize different aspects. Inspect a plot because different datasets can share similar summary statistics.",
+    "A probability model defines outcomes and their probabilities. Equally likely elementary outcomes can be counted, but aggregated outcomes need not be equally likely. Dice sums illustrate this distinction.",
+    "Conditional probability restricts attention to cases where a condition holds. Its denominator is the conditioning group, not the full population. A contingency table makes the denominator visible.",
+    "Bayes rule combines prior probabilities with likelihoods. A rare event can remain unlikely after a positive test if false positives are common. Always include the base rate in the calculation.",
+    "A Bernoulli variable models one binary trial; a normal distribution is continuous and symmetric. Distribution assumptions need justification. Compare simulated data with the theoretical properties you expect.",
+    "Simulation approximates probability by repeated sampling. The estimate changes with sample size and seed. Report the number of trials and compare error across repeated runs rather than trusting one result."
+  ],
+  [
+    "A sample can be large and still be biased. Random selection reduces some biases but does not repair measurement or nonresponse problems. Define the population before choosing a sampling strategy.",
+    "A statistic varies across samples from the same population. Resampling illustrates this variability under assumptions about the observed data. It does not create new independent evidence.",
+    "A frequentist confidence interval comes from a procedure with a long-run coverage rate. It is not an interval for every individual outcome. State the sampling assumptions and avoid causal conclusions.",
+    "Revision should target errors found in independent attempts. Close references, solve a task, then compare with a reliable source. Classify each mistake as conceptual, implementation or testing-related.",
+    "An analysis application should separate raw data, transformations and reporting. A reader needs to reproduce the central result with documented commands. Include a limitations section tied to actual data quality.",
+    "An examination is evidence collection, not a certificate of readiness. Demonstrate a working artifact, explain choices, and test an unseen case. Use the rubric to choose concrete revision work."
+  ]
+]

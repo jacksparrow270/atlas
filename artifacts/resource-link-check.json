@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-10-08T20:45:49.228Z",
+  "results": [
+    {
+      "url": "https://cs50.harvard.edu/python/",
+      "status": 200,
+      "finalURL": "https://cs50.harvard.edu/python/"
+    },
+    {
+      "url": "https://ocw.mit.edu/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/"
+    },
+    {
+      "url": "https://sqlbolt.com/",
+      "status": 200,
+      "finalURL": "https://sqlbolt.com/"
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+      "status": 200,
+      "finalURL": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+    },
+    {
+      "url": "https://www.khanacademy.org/math/statistics-probability",
+      "status": 200,
+      "finalURL": "https://www.khanacademy.org/math/statistics-probability"
+    },
+    {
+      "url": "https://www.3blue1brown.com/topics/linear-algebra",
+      "status": 200,
+      "finalURL": "https://www.3blue1brown.com/?topic=linear-algebra"
+    },
+    {
+      "url": "https://developers.google.com/machine-learning/crash-course",
+      "status": 200,
+      "finalURL": "https://developers.google.com/machine-learning/crash-course?hl=pt-br"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/",
+      "status": 200,
+      "finalURL": "https://scikit-learn.org/stable/"
+    },
+    {
+      "url": "https://course.fast.ai/",
+      "status": 200,
+      "finalURL": "https://course.fast.ai/"
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/",
+      "status": 200,
+      "finalURL": "https://docs.pytorch.org/tutorials/"
+    },
+    {
+      "url": "https://huggingface.co/learn",
+      "status": 200,
+      "finalURL": "https://huggingface.co/learn"
+    },
+    {
+      "url": "https://huggingface.co/learn/llm-course/chapter1/1",
+      "status": 200,
+      "finalURL": "https://huggingface.co/learn/llm-course/chapter1/1"
+    },
+    {
+      "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+      "status": 200,
+      "finalURL": "https://huggingface.co/learn/agents-course/unit0/introduction"
+    },
+    {
+      "url": "https://fastapi.tiangolo.com/",
+      "status": 200,
+      "finalURL": "https://fastapi.tiangolo.com/"
+    },
+    {
+      "url": "https://docs.docker.com/",
+      "status": 200,
+      "finalURL": "https://docs.docker.com/"
+    },
+    {
+      "url": "https://nextjs.org/docs",
+      "status": 200,
+      "finalURL": "https://nextjs.org/docs"
+    },
+    {
+      "url": "https://vercel.com/docs",
+      "status": 200,
+      "finalURL": "https://vercel.com/docs"
+    },
+    {
+      "url": "https://fullstackdeeplearning.com/",
+      "status": 200,
+      "finalURL": "https://fullstackdeeplearning.com/"
+    },
+    {
+      "url": "https://stanford-cs336.github.io/",
+      "status": 200,
+      "finalURL": "http://cs336.stanford.edu/"
+    }
+  ]
+}

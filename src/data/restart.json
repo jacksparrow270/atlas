@@ -1,0 +1,290 @@
+[
+  {
+    "id": "restart-01",
+    "day": 1,
+    "title": "Your first Python program",
+    "explanation": "A program is a sequence of instructions executed by an interpreter. Python evaluates the right side of an assignment before binding the result to a name. input() always returns text; print() displays values. Save your program as a .py file and run it from a terminal so you can see errors and rerun it deliberately.",
+    "code": "name = input('Your name: ')\nmessage = f'Hello, {name}!'\nprint(message)",
+    "exercise": "Install Python from python.org and VS Code from code.visualstudio.com. Install Git, configure your commit name, and create a GitHub account. Check python --version and git --version. Create hello.py, ask for a name and a learning goal, and print both in a friendly sentence. Commit the file without any passwords.",
+    "criteria": [
+      "hello.py runs twice with different input",
+      "You can explain assignment, input and output",
+      "Your first commit contains only intended files"
+    ],
+    "reflection": "What happens when the interpreter cannot find the file?",
+    "question": {
+      "prompt": "input() returns…",
+      "options": ["A string", "An integer", "Nothing"],
+      "correct": 0
+    },
+    "minutes": 50
+  },
+  {
+    "id": "restart-02",
+    "day": 2,
+    "title": "Strings, numbers and conversion",
+    "explanation": "Text and numbers support different operations: '2' + '3' concatenates text, while 2 + 3 adds numbers. int() parses whole-number text; float() parses decimal text. Converting invalid text raises ValueError. An age estimate based only on years can be one year too large before a birthday, so label that assumption.",
+    "code": "birth_year = int(input('Birth year: '))\ncurrent_year = int(input('Current year: '))\nprint('Approximate age:', current_year - birth_year)",
+    "exercise": "Build an age calculator. Ask for current and birth years, print approximate age, and list three assumptions. Try a current-year birth, an older birth and invalid text. Then extend the program to calculate age in approximate months without claiming calendar precision.",
+    "criteria": [
+      "Three valid cases produce expected results",
+      "Invalid input is observed and explained",
+      "Approximate age is labeled honestly"
+    ],
+    "reflection": "Why is '12' different from 12?",
+    "question": {
+      "prompt": "What does int('12') produce?",
+      "options": ["The text 12", "The integer 12", "A Boolean"],
+      "correct": 1
+    },
+    "minutes": 50
+  },
+  {
+    "id": "restart-03",
+    "day": 3,
+    "title": "Comparisons and branching",
+    "explanation": "A comparison produces True or False. if chooses whether an indented block runs; else handles the remaining case. Python uses == to compare and = to assign. Modulo (%) gives a remainder, so an integer is even when its remainder after division by two is zero.",
+    "code": "number = int(input('Integer: '))\nif number % 2 == 0:\n    print('Even')\nelse:\n    print('Odd')",
+    "exercise": "Write even_odd.py and eligibility.py. For eligibility, allow ages 18 and above. Write expected results before running cases 17, 18 and 19. Test even/odd with zero and negative values. Explain which branch executes for each input.",
+    "criteria": [
+      "Boundary values are tested",
+      "Zero and negatives are handled",
+      "You can explain == versus ="
+    ],
+    "reflection": "Which boundary test revealed the most information?",
+    "question": {
+      "prompt": "Which expression checks equality?",
+      "options": ["x = 3", "x == 3", "x != 3"],
+      "correct": 1
+    },
+    "minutes": 50
+  },
+  {
+    "id": "restart-04",
+    "day": 4,
+    "title": "Boolean logic and grade rules",
+    "explanation": "and requires both conditions; or requires at least one; not reverses truth. An if/elif chain chooses the first true branch. Order matters when ranges overlap. Validate the range before assigning a grade so a score of 130 is not silently treated as excellent.",
+    "code": "score = int(input('Score: '))\nif score < 0 or score > 100:\n    print('Invalid')\nelif score >= 85:\n    print('Excellent')\nelif score >= 70:\n    print('Pass')\nelse:\n    print('Revise')",
+    "exercise": "Create a grade calculator with clear bands. List expected results at -1, 0, 69, 70, 84, 85, 100 and 101. Add an attendance requirement using and, then write a four-row truth table for passing score and adequate attendance.",
+    "criteria": [
+      "All eight boundaries are checked",
+      "Invalid values do not receive a grade",
+      "The truth table matches the implementation"
+    ],
+    "reflection": "Why must the highest threshold come first?",
+    "question": {
+      "prompt": "How many elif branches run in one chain?",
+      "options": ["All true branches", "At most one", "Exactly two"],
+      "correct": 1
+    },
+    "minutes": 50
+  },
+  {
+    "id": "restart-05",
+    "day": 5,
+    "title": "Debugging with evidence",
+    "explanation": "A traceback shows where execution failed; the last line names the exception. Syntax errors prevent parsing, runtime errors interrupt execution, and logic errors produce incorrect results without raising an exception. Reproduce a failure, state your expectation, change one cause, and rerun both the failing and a working case.",
+    "code": "# Broken examples to repair:\nprint(mesage)\nprint('Age: ' + 20)\nint('twenty')\n# if True: print('x') with a wrongly indented next line\n# A pass rule incorrectly uses score > 70",
+    "exercise": "Create five small broken programs: undefined name, text-plus-number, invalid conversion, incorrect indentation, and a grade boundary using > instead of >=. For each, save the error, explain the cause, apply the smallest repair and demonstrate a regression test.",
+    "criteria": [
+      "Five distinct failures are documented",
+      "Each repair has an explanation",
+      "The logic bug includes a boundary test"
+    ],
+    "reflection": "What evidence helped you avoid guessing?",
+    "question": {
+      "prompt": "Which failure may run without an exception?",
+      "options": ["Syntax error", "Logic error", "NameError"],
+      "correct": 1
+    },
+    "minutes": 50
+  },
+  {
+    "id": "restart-06",
+    "day": 6,
+    "title": "Independent mini-application",
+    "explanation": "Independent work reveals which steps you can reconstruct. Start with inputs, outputs and rules on paper. Split the problem into small observable operations. You have not yet learned loops, so a one-attempt guessing game or one-action menu is enough; avoid copying a more advanced solution you cannot explain.",
+    "code": "# Plan before code:\n# 1. Read a menu choice.\n# 2. Read the required values.\n# 3. Choose a branch.\n# 4. Display a result.",
+    "exercise": "Without copying a solution, build a one-action menu with unit conversion and an eligibility check, or a single-attempt number guessing program. Predict five outcomes, including an unsupported menu choice. After finishing, compare your approach with your earlier notes and record one improvement.",
+    "criteria": [
+      "A complete program runs independently",
+      "Five cases are checked",
+      "Every line can be explained aloud"
+    ],
+    "reflection": "Where did you need a hint, and why?",
+    "question": {
+      "prompt": "What should you do before changing a failing program?",
+      "options": ["Delete it", "Reproduce the failure", "Change many lines"],
+      "correct": 1
+    },
+    "minutes": 50
+  },
+  {
+    "id": "restart-07",
+    "day": 7,
+    "title": "Rest and optional reflection",
+    "explanation": "Rest is part of a sustainable schedule. No coding is required today. If useful, spend five minutes recalling one concept without opening your notes. Forgetting a detail is information for next week, not a failure.",
+    "code": "# Optional: write one sentence about what you learned.",
+    "exercise": "Optionally record what felt clear, what remained confusing and one adjustment for next week. Stop after five minutes. Your curriculum will not advance or mark unfinished lessons complete automatically.",
+    "criteria": ["Rest is respected", "Any reflection is optional"],
+    "reflection": "What session length felt realistic?",
+    "question": {
+      "prompt": "Does a missed calendar day complete a lesson?",
+      "options": ["Yes", "No", "Only on Sunday"],
+      "correct": 1
+    },
+    "minutes": 5
+  },
+  {
+    "id": "restart-08",
+    "day": 8,
+    "title": "Loops and accumulation",
+    "explanation": "for repeats over an iterable; range(start, stop) excludes stop. while repeats as long as its condition stays true, so something must eventually change. An accumulator stores a result across iterations. Initialize it before the loop, update inside, and use the final value afterward.",
+    "code": "total = 0\nfor number in range(1, 6):\n    total += number\nprint(total)  # 15",
+    "exercise": "Write a multiplication table for a chosen integer and a sum from 1 through n. Rebuild the sum with while. Trace the accumulator by hand for n=3. Test n=0 and explain how to avoid an infinite loop.",
+    "criteria": [
+      "Both loop forms produce the same sum",
+      "The stop boundary is explained",
+      "The while condition eventually becomes false"
+    ],
+    "reflection": "What changes on every iteration?",
+    "question": {
+      "prompt": "range(1, 4) includes…",
+      "options": ["1, 2, 3", "1, 2, 3, 4", "0, 1, 2, 3"],
+      "correct": 0
+    },
+    "minutes": 75
+  },
+  {
+    "id": "restart-09",
+    "day": 9,
+    "title": "Loop problem solving",
+    "explanation": "Nested loops run the inner loop for each outer iteration. Counting iterations helps predict performance and catch off-by-one errors. A loop invariant is a statement that remains true after each iteration, such as total being the sum of numbers already visited.",
+    "code": "for row in range(3):\n    for column in range(2):\n        print(row, column)",
+    "exercise": "Solve three tasks independently: count vowels in a sentence, print a triangle of height n, and list all pairs from 1..5 whose sum is 6. Predict the number of outputs first. Test empty input and n=1. Record an invariant for the vowel counter.",
+    "criteria": [
+      "Three solutions are written independently",
+      "Predictions are compared with outputs",
+      "An edge case exists for each task"
+    ],
+    "reflection": "When is a nested loop actually necessary?",
+    "question": {
+      "prompt": "A 3-iteration loop containing a 2-iteration loop runs the body…",
+      "options": ["5 times", "6 times", "3 times"],
+      "correct": 1
+    },
+    "minutes": 75
+  },
+  {
+    "id": "restart-10",
+    "day": 10,
+    "title": "Functions with contracts",
+    "explanation": "A function names a reusable computation. Parameters receive values from the caller. return sends a value back and ends that call; print only displays text. Separating computation from input makes functions easier to test and reuse. A contract describes accepted inputs, returned outputs and error cases.",
+    "code": "def add(a, b):\n    return a + b\n\nresult = add(4, 7)\nassert result == 11",
+    "exercise": "Build a calculator with add, subtract, multiply and divide functions. Keep input and printing outside them. Decide how division by zero is reported. Write at least eight assertions including negatives and decimals, and explain the difference between a return value and displayed output.",
+    "criteria": [
+      "Four operations have explicit contracts",
+      "Eight assertions pass",
+      "Division by zero is handled deliberately"
+    ],
+    "reflection": "Which function can be tested without keyboard input?",
+    "question": {
+      "prompt": "A function without return normally returns…",
+      "options": ["0", "None", "An empty string"],
+      "correct": 1
+    },
+    "minutes": 75
+  },
+  {
+    "id": "restart-11",
+    "day": 11,
+    "title": "Lists and a to-do program",
+    "explanation": "A list is an ordered mutable collection. Indexing starts at zero; negative indices count backward. append adds an item, while pop removes and returns one. Changing a list while iterating over it can skip elements, so prefer a separate filtered result or deliberate indexing.",
+    "code": "tasks = ['Read', 'Practice']\ntasks.append('Review')\nfor index, task in enumerate(tasks, start=1):\n    print(index, task)",
+    "exercise": "Build a menu loop to add, display and remove to-do items. Convert the displayed one-based number to a zero-based index and reject invalid positions. Test empty lists, first/last removal and duplicate titles. Persistence is not required yet.",
+    "criteria": [
+      "The menu exits cleanly",
+      "Invalid positions are rejected",
+      "Empty-list behavior is understandable"
+    ],
+    "reflection": "Why does displayed item 1 use index 0?",
+    "question": {
+      "prompt": "Which operation adds one item to a list?",
+      "options": ["append", "strip", "lower"],
+      "correct": 0
+    },
+    "minutes": 75
+  },
+  {
+    "id": "restart-12",
+    "day": 12,
+    "title": "Dictionaries and marks",
+    "explanation": "A dictionary maps unique keys to values. Looking up an unknown key directly raises KeyError; get can return a default. Assigning an existing key replaces its value. Choose a data model that reflects identity: names can collide, so a student ID is often safer.",
+    "code": "marks = {'s01': 82, 's02': 74}\nmarks['s03'] = 90\nprint(marks.get('s04', 'Not found'))\nprint(sum(marks.values()) / len(marks))",
+    "exercise": "Build a marks tracker keyed by student ID. Support adding, updating, looking up and averaging marks. Handle an empty class and reject scores outside 0..100. Decide whether duplicate IDs update or require confirmation and document that choice.",
+    "criteria": [
+      "Unknown IDs are handled",
+      "The empty average does not divide by zero",
+      "Duplicate behavior is explicit"
+    ],
+    "reflection": "Why is an ID a better key than a name?",
+    "question": {
+      "prompt": "Assigning an existing dictionary key…",
+      "options": [
+        "Adds a duplicate key",
+        "Replaces its value",
+        "Always raises an error"
+      ],
+      "correct": 1
+    },
+    "minutes": 75
+  },
+  {
+    "id": "restart-13",
+    "day": 13,
+    "title": "Combine concepts: expense tracker",
+    "explanation": "A small application combines data modeling, pure functions and an interaction loop. Represent each expense with a category and amount. Keep validation separate from reporting. For this beginner exercise, document that floating-point values are approximate; financial software usually needs decimal arithmetic or integer minor units.",
+    "code": "expenses = [{'category': 'Food', 'amount': 80}]\ndef total(items):\n    return sum(item['amount'] for item in items)\nprint(total(expenses))",
+    "exercise": "Build an in-memory expense tracker with add, list, total and category summary commands. Reject negative amounts and blank categories. Add at least six tests including no expenses and repeated categories. Write a README with assumptions; file persistence is optional enrichment.",
+    "criteria": [
+      "Four commands work",
+      "Six tests are recorded",
+      "Data modeling and numeric assumptions are explained"
+    ],
+    "reflection": "Which responsibility belongs in its own function?",
+    "question": {
+      "prompt": "Which structure naturally represents one expense?",
+      "options": [
+        "A category-to-amount dictionary record",
+        "Only a Boolean",
+        "Only a loop"
+      ],
+      "correct": 0
+    },
+    "minutes": 75
+  },
+  {
+    "id": "restart-14",
+    "day": 14,
+    "title": "Independent restart assessment",
+    "explanation": "Retrieval practice means reconstructing a solution before consulting references. Use a new problem rather than copying yesterday's file. Assess correctness using test cases and assess explanation using a rubric. A working output alone does not show that every input or edge case is handled.",
+    "code": "# Write your own solution before opening earlier programs.\n# Inputs → validation → computation → output → tests",
+    "exercise": "Rebuild a library checkout tracker or marks tracker in 45 minutes without copying. Include functions, a collection, a menu and invalid-input handling. Answer the concept quiz, then self-assess correctness, decomposition, tests and clarity. Record what to revise and schedule a short follow-up task.",
+    "criteria": [
+      "The solution is independent",
+      "Normal, empty and invalid cases are tested",
+      "A self-assessment and revision plan are saved"
+    ],
+    "reflection": "What can you now build without a tutorial?",
+    "question": {
+      "prompt": "Which is strongest evidence of understanding?",
+      "options": [
+        "Time elapsed",
+        "Explaining and testing an independent solution",
+        "Opening every lesson"
+      ],
+      "correct": 1
+    },
+    "minutes": 75
+  }
+]

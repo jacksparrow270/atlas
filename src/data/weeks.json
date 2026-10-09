@@ -1,0 +1,1146 @@
+[
+  {
+    "id": "week-01",
+    "week": 1,
+    "title": "Python essentials",
+    "outcome": "Run small Python programs and explain how values flow through them.",
+    "topics": [
+      "Install Python and inspect its version",
+      "Bind variables and inspect types",
+      "Read input and convert strings",
+      "Evaluate arithmetic expressions",
+      "Format a receipt with f-strings",
+      "Build a command-line unit converter"
+    ],
+    "exercises": [
+      "Run python --version and print your interpreter path",
+      "Predict the types of 12 expressions, then check with type()",
+      "Ask for two numbers and print their sum",
+      "Compare /, // and % on positive and negative values",
+      "Produce a receipt with item, quantity and two-decimal total",
+      "Convert Celsius to Fahrenheit and test zero, negative and fractional inputs"
+    ]
+  },
+  {
+    "id": "week-02",
+    "week": 2,
+    "title": "Decisions and debugging",
+    "outcome": "Express decision rules and diagnose failures.",
+    "topics": [
+      "Compare values",
+      "Branch with if and else",
+      "Combine Boolean conditions",
+      "Use elif for multiple cases",
+      "Read tracebacks",
+      "Build a rule-based eligibility checker"
+    ],
+    "exercises": [
+      "Test equality and ordering for numbers and strings",
+      "Classify integers as even or odd; test zero, negative integers and positive values.",
+      "Write a truth table for a discount rule",
+      "Assign grades and test every boundary",
+      "Repair a NameError, TypeError, ValueError, indentation error and logic error",
+      "Validate age and prerequisites; write six expected outcomes before coding"
+    ]
+  },
+  {
+    "id": "week-03",
+    "week": 3,
+    "title": "Loops and strings",
+    "outcome": "Automate repeated work without losing control of termination.",
+    "topics": [
+      "Iterate over ranges",
+      "Design while-loop termination",
+      "Index and slice strings",
+      "Accumulate counts and totals",
+      "Trace nested loops",
+      "Build a text statistics tool"
+    ],
+    "exercises": [
+      "Print multiplication tables from 1 to 10",
+      "Read values until a sentinel and handle empty input",
+      "Reverse a string and extract alternating characters",
+      "Count vowels without calling count()",
+      "Print a coordinate grid and count loop iterations",
+      "Report words, characters and most frequent letter; test empty text"
+    ]
+  },
+  {
+    "id": "week-04",
+    "week": 4,
+    "title": "Functions and collections",
+    "outcome": "Decompose a program into testable functions.",
+    "topics": [
+      "Define function contracts",
+      "Pass parameters and return values",
+      "Transform lists",
+      "Model dictionaries",
+      "Separate input from computation",
+      "Build a marks tracker"
+    ],
+    "exercises": [
+      "Write three functions with input/output examples",
+      "Explain why print is not return with a small experiment",
+      "Filter scores above a threshold without modifying the original",
+      "Store student names and marks with duplicate handling",
+      "Refactor a calculator into pure functions and an input loop",
+      "Add, update and summarize marks; test unknown students"
+    ]
+  },
+  {
+    "id": "week-05",
+    "week": 5,
+    "title": "Files and modules",
+    "outcome": "Persist data and recover from expected failures.",
+    "topics": [
+      "Read text safely",
+      "Write CSV records",
+      "Handle exceptions precisely",
+      "Use JSON for persistence",
+      "Split a program into modules",
+      "Build a persistent expense log"
+    ],
+    "exercises": [
+      "Read a UTF-8 file with a context manager",
+      "Write and reload fields containing commas",
+      "Recover from missing files and invalid numbers",
+      "Round-trip nested expense records through JSON and verify types and values are preserved.",
+      "Extract validation and storage modules",
+      "Keep data across runs and test a corrupt input file"
+    ]
+  },
+  {
+    "id": "week-06",
+    "week": 6,
+    "title": "Objects, Git and tests",
+    "outcome": "Maintain a small program with version control and automated tests.",
+    "topics": [
+      "Model a class",
+      "Use composition",
+      "Create focused commits",
+      "Work on a branch",
+      "Write pytest assertions",
+      "Package a tested library"
+    ],
+    "exercises": [
+      "Implement a BankAccount with a balance invariant",
+      "Build a cart containing independent item objects",
+      "Commit a working feature and inspect its diff",
+      "Create, merge and delete a feature branch locally",
+      "Test a valid case, boundary and exception",
+      "Publish a README with install, test and usage instructions"
+    ]
+  },
+  {
+    "id": "week-07",
+    "week": 7,
+    "title": "NumPy",
+    "outcome": "Reason about shapes and vectorize numeric computations.",
+    "topics": [
+      "Create typed arrays",
+      "Index and slice arrays",
+      "Understand broadcasting",
+      "Compute vector operations",
+      "Compare vectorization and loops",
+      "Implement feature normalization"
+    ],
+    "exercises": [
+      "Create 1D and 2D arrays and inspect dtype and shape",
+      "Select rows using Boolean masks and verify the selected indices against a loop.",
+      "Predict valid operations for five shape pairs",
+      "Compute norms and dot products by hand and in NumPy",
+      "Time both versions on equal data and verify equality",
+      "Handle constant columns without dividing by zero"
+    ]
+  },
+  {
+    "id": "week-08",
+    "week": 8,
+    "title": "Data analysis and SQL",
+    "outcome": "Turn messy tabular data into reproducible findings.",
+    "topics": [
+      "Load CSV data",
+      "Audit missing and duplicate values",
+      "Group and aggregate",
+      "Query with SQL",
+      "Select honest visualizations",
+      "Create an analysis report"
+    ],
+    "exercises": [
+      "Load a public dataset and write a data dictionary",
+      "Record cleaning decisions and rows affected",
+      "Compare grouped means and medians and explain the effect of a single extreme outlier.",
+      "Use SELECT, WHERE, GROUP BY and JOIN on small tables",
+      "Build three charts with units and readable axes",
+      "Reproduce findings from one script with citations"
+    ]
+  },
+  {
+    "id": "week-09",
+    "week": 9,
+    "title": "Linear algebra",
+    "outcome": "Explain the geometry behind common ML operations.",
+    "topics": [
+      "Vectors and norms",
+      "Matrices as transformations",
+      "Dot products and projections",
+      "Matrix multiplication",
+      "Systems of equations",
+      "Least-squares geometry"
+    ],
+    "exercises": [
+      "Draw and normalize three vectors and verify that nonzero normalized vectors have unit length.",
+      "Apply scale and rotation to four points and plot original and transformed coordinates.",
+      "Compute cosine similarity including a zero-vector case",
+      "Verify dimensions before multiplying matrices",
+      "Solve a two-variable system by hand and check numerically",
+      "Fit an overdetermined system and inspect residuals"
+    ]
+  },
+  {
+    "id": "week-10",
+    "week": 10,
+    "title": "Calculus and searching",
+    "outcome": "Connect gradients to optimization and analyze search costs.",
+    "topics": [
+      "Rates of change",
+      "Differentiate simple functions",
+      "Compute partial derivatives",
+      "Run gradient descent",
+      "Search arrays",
+      "Compare optimization experiments"
+    ],
+    "exercises": [
+      "Estimate a slope with finite differences",
+      "Differentiate a quadratic and verify at three points",
+      "Find the gradient of x squared plus 3y squared",
+      "Optimize a quadratic using three learning rates",
+      "Implement linear and binary search with edge-case tests",
+      "Plot loss trajectories and explain divergence"
+    ]
+  },
+  {
+    "id": "week-11",
+    "week": 11,
+    "title": "Probability and statistics",
+    "outcome": "Quantify uncertainty without overstating evidence.",
+    "topics": [
+      "Summarize distributions",
+      "Count outcomes",
+      "Conditional probability",
+      "Bayes rule",
+      "Common distributions",
+      "Simulate uncertainty"
+    ],
+    "exercises": [
+      "Compare mean and median with an outlier",
+      "Enumerate all 36 outcomes for two dice and calculate the probability of every possible sum.",
+      "Build a two-way table and calculate conditionals",
+      "Compute a diagnostic posterior using stated base rates",
+      "Simulate Bernoulli and normal samples",
+      "Compare empirical and theoretical probabilities"
+    ]
+  },
+  {
+    "id": "week-12",
+    "week": 12,
+    "title": "Sampling and foundations exam",
+    "outcome": "Defend a complete data analysis with reproducible evidence.",
+    "topics": [
+      "Sampling bias",
+      "Sampling variability",
+      "Confidence intervals",
+      "Audit Python fundamentals",
+      "Complete the analysis application",
+      "Foundation examination"
+    ],
+    "exercises": [
+      "Compare convenience and random samples",
+      "Resample means and plot their spread",
+      "Interpret an interval without claiming certainty about an individual",
+      "Solve three unseen problems and log mistakes",
+      "Combine CSV, SQL, statistics and charts in one repository",
+      "Present assumptions, tests and limitations; self-assess with the rubric"
+    ]
+  },
+  {
+    "id": "week-13",
+    "week": 13,
+    "title": "Machine learning foundations",
+    "outcome": "Frame a prediction task and establish a baseline.",
+    "topics": [
+      "Define features and labels",
+      "Identify supervised tasks",
+      "Inspect dataset provenance",
+      "Choose an evaluation target",
+      "Create a simple baseline",
+      "Write an experiment plan"
+    ],
+    "exercises": [
+      "Describe a target available at prediction time",
+      "Compare regression and classification on three examples",
+      "Document licensing, collection and missing labels",
+      "Choose a metric tied to user impact and explain which harmful errors accuracy might hide.",
+      "Predict the mean or majority class and record performance",
+      "Specify splits, baseline, metric and likely failure cases"
+    ]
+  },
+  {
+    "id": "week-14",
+    "week": 14,
+    "title": "Linear regression",
+    "outcome": "Implement and check gradient-based linear regression.",
+    "topics": [
+      "Linear model geometry",
+      "Mean squared error",
+      "Derive gradients",
+      "Implement gradient descent",
+      "Scale features",
+      "Compare with a library"
+    ],
+    "exercises": [
+      "Plot predictions for three slopes on the same data and compare their squared residuals.",
+      "Compute MSE manually on four observations",
+      "Derive weight and bias gradients for mean squared error; check using finite differences.",
+      "Fit synthetic data without sklearn and recover a known slope within a stated tolerance.",
+      "Compare convergence with and without scaling",
+      "Match sklearn predictions within tolerance"
+    ]
+  },
+  {
+    "id": "week-15",
+    "week": 15,
+    "title": "Classification",
+    "outcome": "Build and interpret a logistic classifier.",
+    "topics": [
+      "Logits and sigmoid",
+      "Binary cross entropy",
+      "Train logistic regression",
+      "Decision thresholds",
+      "Class imbalance",
+      "Classification case study"
+    ],
+    "exercises": [
+      "Plot sigmoid for positive and negative logits and explain saturation near its extremes.",
+      "Calculate log loss for confident wrong predictions",
+      "Fit a binary model on a public dataset",
+      "Compare confusion matrices at three thresholds",
+      "Compare accuracy with a majority baseline",
+      "Document threshold choice and error examples"
+    ]
+  },
+  {
+    "id": "week-16",
+    "week": 16,
+    "title": "Evaluation and leakage",
+    "outcome": "Evaluate models without contaminating future estimates.",
+    "topics": [
+      "Split datasets",
+      "Build confusion matrices",
+      "Precision and recall",
+      "F1 and threshold tradeoffs",
+      "Detect leakage",
+      "Audit an experiment"
+    ],
+    "exercises": [
+      "Create stratified splits with a fixed seed",
+      "Compute TP, FP, TN and FN by hand for ten predictions and verify the total sample count.",
+      "Explain errors in terms of a user need",
+      "Sweep thresholds using validation data only",
+      "Identify and remove post-outcome features",
+      "Keep test labels sealed until the final report"
+    ]
+  },
+  {
+    "id": "week-17",
+    "week": 17,
+    "title": "Trees and forests",
+    "outcome": "Compare interpretable trees with ensemble methods.",
+    "topics": [
+      "Decision boundaries",
+      "Impurity and splits",
+      "Control tree complexity",
+      "Bootstrap sampling",
+      "Random forests",
+      "Feature engineering audit"
+    ],
+    "exercises": [
+      "Fit and plot a shallow decision tree",
+      "Compute Gini impurity for two candidate splits",
+      "Compare train and validation scores by depth",
+      "Sample with replacement and count unique rows",
+      "Compare a forest with a single tree on identical validation folds and record score variation.",
+      "Engineer two features inside the training pipeline"
+    ]
+  },
+  {
+    "id": "week-18",
+    "week": 18,
+    "title": "Boosting and tuning",
+    "outcome": "Tune models with a defensible validation budget.",
+    "topics": [
+      "Sequential boosting",
+      "Learning rate tradeoffs",
+      "Cross-validation",
+      "Search spaces",
+      "Hyperparameter search",
+      "Model comparison report"
+    ],
+    "exercises": [
+      "Explain how residual fitting changes predictions",
+      "Compare tree count and learning rate together",
+      "Run stratified folds and report score variance",
+      "Choose bounded ranges before inspecting results",
+      "Use randomized search with a fixed compute budget",
+      "Compare baseline, forest and boosting using identical folds"
+    ]
+  },
+  {
+    "id": "week-19",
+    "week": 19,
+    "title": "Unsupervised learning",
+    "outcome": "Explore structure without treating clusters as truth.",
+    "topics": [
+      "Distance and scaling",
+      "K-means updates",
+      "Initialization sensitivity",
+      "Cluster evaluation",
+      "Principal components",
+      "Explore a dataset"
+    ],
+    "exercises": [
+      "Compare distances before and after standardization",
+      "Implement assignment and centroid update steps",
+      "Compare inertia across five random starts",
+      "Inspect silhouette scores and ambiguous points",
+      "Project data onto two principal components",
+      "Write what cluster labels do and do not imply"
+    ]
+  },
+  {
+    "id": "week-20",
+    "week": 20,
+    "title": "Reproducible pipelines",
+    "outcome": "Ship a reproducible prediction pipeline.",
+    "topics": [
+      "Column transforms",
+      "Prevent preprocessing leakage",
+      "Pipeline composition",
+      "Model persistence",
+      "Reproduce a run",
+      "Package the prediction interface"
+    ],
+    "exercises": [
+      "Handle numeric and categorical columns separately",
+      "Fit imputation only on training folds",
+      "Combine transforms and estimator in a Pipeline",
+      "Reload a trusted artifact and compare outputs",
+      "Record dataset hash, seed and library versions",
+      "Reject invalid input and document model limitations"
+    ]
+  },
+  {
+    "id": "week-21",
+    "week": 21,
+    "title": "Neural networks",
+    "outcome": "Explain a small network in terms of tensor operations.",
+    "topics": [
+      "Perceptrons",
+      "Activation functions",
+      "Layer shapes",
+      "Forward propagation",
+      "Loss surfaces",
+      "Train a tiny network"
+    ],
+    "exercises": [
+      "Implement a threshold unit on two inputs",
+      "Compare ReLU, sigmoid and tanh outputs",
+      "Count parameters for a two-layer network",
+      "Compute a small forward pass by hand",
+      "Visualize a two-parameter loss slice",
+      "Fit a nonlinear toy dataset and compare a linear baseline"
+    ]
+  },
+  {
+    "id": "week-22",
+    "week": 22,
+    "title": "PyTorch and backpropagation",
+    "outcome": "Use automatic differentiation and verify gradients.",
+    "topics": [
+      "Tensor operations",
+      "Computational graphs",
+      "Chain rule",
+      "Autograd",
+      "Datasets and loaders",
+      "Implement a training step"
+    ],
+    "exercises": [
+      "Create tensors and verify shape transformations",
+      "Draw the graph of a composite function",
+      "Differentiate the graph by hand and verify each local derivative before applying the chain rule.",
+      "Compare autograd with finite differences",
+      "Batch a dataset without leaking validation labels",
+      "Zero gradients, backpropagate and update parameters"
+    ]
+  },
+  {
+    "id": "week-23",
+    "week": 23,
+    "title": "Training practice",
+    "outcome": "Diagnose and improve neural network training.",
+    "topics": [
+      "Optimizer behavior",
+      "Training loops",
+      "Regularization",
+      "Learning curves",
+      "Early stopping",
+      "Controlled experiments"
+    ],
+    "exercises": [
+      "Compare SGD and Adam with fixed initial weights",
+      "Separate train and eval modes correctly",
+      "Test dropout and weight decay independently",
+      "Plot train and validation loss per epoch",
+      "Save the best validation checkpoint and verify reloading it reproduces the validation predictions.",
+      "Record one hypothesis and change one factor per run"
+    ]
+  },
+  {
+    "id": "week-24",
+    "week": 24,
+    "title": "Vision and ML examination",
+    "outcome": "Evaluate a transfer-learning model and defend its limits.",
+    "topics": [
+      "Convolution shapes",
+      "Pooling and receptive fields",
+      "Transfer learning",
+      "Data augmentation",
+      "Error analysis",
+      "ML project examination"
+    ],
+    "exercises": [
+      "Calculate output shapes for three convolutions",
+      "Trace which input pixels affect an output",
+      "Freeze a pretrained backbone and fit a head",
+      "Apply augmentation to training images only",
+      "Inspect failures by class and image quality",
+      "Deploy the predictive system with tests, baseline and limitations"
+    ]
+  },
+  {
+    "id": "week-25",
+    "week": 25,
+    "title": "Language and embeddings",
+    "outcome": "Represent text and inspect semantic behavior.",
+    "topics": [
+      "Text normalization",
+      "Tokenization",
+      "Subword units",
+      "Word representations",
+      "Sentence embeddings",
+      "Language dataset audit"
+    ],
+    "exercises": [
+      "Compare normalization effects on names and punctuation",
+      "Count tokens for multilingual examples",
+      "Inspect out-of-vocabulary behavior on misspellings and unfamiliar names and record token sequences.",
+      "Compare sparse and dense representations",
+      "Rank five sentences by cosine similarity",
+      "Document provenance, licenses and harmful content handling"
+    ]
+  },
+  {
+    "id": "week-26",
+    "week": 26,
+    "title": "Transformers and inference",
+    "outcome": "Explain attention and constrain generated outputs.",
+    "topics": [
+      "Queries, keys and values",
+      "Scaled attention",
+      "Positional information",
+      "Transformer blocks",
+      "Inference settings",
+      "Structured output validation"
+    ],
+    "exercises": [
+      "Calculate attention weights for a tiny matrix",
+      "Implement masked softmax attention and verify future positions have zero weight.",
+      "Compare order-sensitive and orderless representations",
+      "Annotate a block diagram with tensor shapes",
+      "Compare deterministic and sampled local-model outputs",
+      "Validate JSON against a schema and handle rejection"
+    ]
+  },
+  {
+    "id": "week-27",
+    "week": 27,
+    "title": "Semantic search",
+    "outcome": "Build measurable nearest-neighbor retrieval.",
+    "topics": [
+      "Embedding selection",
+      "Similarity metrics",
+      "Vector indexing",
+      "Metadata filtering",
+      "Retrieval evaluation",
+      "Search interface"
+    ],
+    "exercises": [
+      "Compare two local embedding models on ten queries",
+      "Test normalized cosine and dot-product equivalence",
+      "Index a small corpus with stable document IDs",
+      "Apply metadata filters before presenting results",
+      "Label relevant documents and calculate recall at k",
+      "Display matched passages with source URLs"
+    ]
+  },
+  {
+    "id": "week-28",
+    "week": 28,
+    "title": "Retrieval-augmented generation",
+    "outcome": "Ground answers in inspectable retrieved evidence.",
+    "topics": [
+      "Document parsing",
+      "Chunk boundaries",
+      "Retriever assembly",
+      "Context construction",
+      "Citations and abstention",
+      "RAG evaluation"
+    ],
+    "exercises": [
+      "Extract text while retaining source and page IDs",
+      "Compare fixed and semantic chunks on the same corpus",
+      "Retrieve top-k passages with scores and stable source IDs and inspect five labeled queries.",
+      "Keep instructions separate from untrusted documents",
+      "Return citations and abstain when evidence is missing",
+      "Measure retrieval recall and manually judge grounded answers"
+    ]
+  },
+  {
+    "id": "week-29",
+    "week": 29,
+    "title": "Tools and function calls",
+    "outcome": "Validate and execute narrowly scoped tool requests.",
+    "topics": [
+      "Tool contracts",
+      "JSON schemas",
+      "Argument validation",
+      "Safe execution",
+      "Error handling",
+      "Tool integration tests"
+    ],
+    "exercises": [
+      "Specify inputs, outputs and side effects for a tool",
+      "Write a schema rejecting unknown properties",
+      "Reject malformed and out-of-range arguments",
+      "Require confirmation before an external mutation",
+      "Handle timeout, permission denial and partial failure",
+      "Test with recorded tool requests rather than a paid model"
+    ]
+  },
+  {
+    "id": "week-30",
+    "week": 30,
+    "title": "Agent workflows",
+    "outcome": "Build a bounded agent loop with human oversight.",
+    "topics": [
+      "State machines",
+      "Agent loop",
+      "Tool budgets",
+      "Human approval",
+      "Workflow recovery",
+      "Agent safety demonstration"
+    ],
+    "exercises": [
+      "Draw allowed states and transitions including cancellation, denial and failure recovery.",
+      "Implement plan, act, observe with a stub model",
+      "Stop after a fixed step or cost budget",
+      "Pause side effects until approval is recorded",
+      "Resume from a persisted checkpoint after interruption without repeating a completed side effect.",
+      "Demonstrate refusal of an unauthorized action"
+    ]
+  },
+  {
+    "id": "week-31",
+    "week": 31,
+    "title": "LLM evaluation",
+    "outcome": "Measure quality using a versioned evaluation set.",
+    "topics": [
+      "Evaluation dimensions",
+      "Dataset authoring",
+      "Deterministic checks",
+      "Human rubrics",
+      "Hallucination analysis",
+      "Regression evaluation"
+    ],
+    "exercises": [
+      "Define correctness, groundedness and usefulness separately",
+      "Create 30 representative questions with source evidence",
+      "Test schema, citations and refusal behavior",
+      "Score five answers with a written rubric",
+      "Categorize unsupported claims and missing evidence",
+      "Compare two configurations on identical examples"
+    ]
+  },
+  {
+    "id": "week-32",
+    "week": 32,
+    "title": "Security, latency and cost",
+    "outcome": "Analyze practical risks in an AI application.",
+    "topics": [
+      "Prompt injection",
+      "Trust boundaries",
+      "Input validation",
+      "Latency profiling",
+      "Inference cost budgets",
+      "Adversarial tests"
+    ],
+    "exercises": [
+      "Insert malicious instructions into a retrieved document",
+      "Diagram data and instruction boundaries",
+      "Reject oversized and malformed requests",
+      "Measure retrieval and generation separately",
+      "Estimate per-request tokens and monthly usage",
+      "Verify tool permissions survive hostile content"
+    ]
+  },
+  {
+    "id": "week-33",
+    "week": 33,
+    "title": "HTTP and FastAPI",
+    "outcome": "Build and test a documented JSON API.",
+    "topics": [
+      "HTTP requests",
+      "REST resources",
+      "Request validation",
+      "Error responses",
+      "API tests",
+      "OpenAPI documentation"
+    ],
+    "exercises": [
+      "Inspect methods, headers and status codes",
+      "Design resources for a task service including create, read, update, delete and error statuses.",
+      "Use typed request and response models",
+      "Return stable errors without exposing tracebacks",
+      "Test success, invalid input and missing records",
+      "Run the API and verify its generated schema"
+    ]
+  },
+  {
+    "id": "week-34",
+    "week": 34,
+    "title": "Databases and reliability",
+    "outcome": "Persist user data with explicit ownership.",
+    "topics": [
+      "Relational modeling",
+      "SQL constraints",
+      "Authentication and authorization",
+      "Transactions",
+      "Asynchronous work",
+      "Reliability tests"
+    ],
+    "exercises": [
+      "Create users, documents and jobs with foreign keys",
+      "Reject duplicate keys and invalid states",
+      "Test same-user and cross-user requests",
+      "Rollback a multi-step failure atomically",
+      "Make a retryable background operation idempotent",
+      "Simulate database unavailability and document recovery"
+    ]
+  },
+  {
+    "id": "week-35",
+    "week": 35,
+    "title": "Linux, Docker and CI",
+    "outcome": "Make a reproducible deployment artifact.",
+    "topics": [
+      "Linux processes",
+      "Environment variables",
+      "Docker images",
+      "Container networking",
+      "Continuous integration",
+      "Release pipeline"
+    ],
+    "exercises": [
+      "Inspect process, port and filesystem permissions",
+      "Separate configuration from secrets and create an example environment file with no real credentials.",
+      "Build a minimal image with a non-root user",
+      "Connect an API and database locally through container networking and expose only intended ports.",
+      "Run lint and tests on a pull request",
+      "Tag a versioned image and document rollback without losing persistent database data."
+    ]
+  },
+  {
+    "id": "week-36",
+    "week": 36,
+    "title": "Cloud and AI examination",
+    "outcome": "Deploy and evaluate a research assistant.",
+    "topics": [
+      "Choose a deployment target",
+      "Configure secrets",
+      "Health checks",
+      "Structured logs",
+      "Monitoring",
+      "AI engineering examination"
+    ],
+    "exercises": [
+      "Estimate usage against a free-tier limit",
+      "Keep secrets outside version control",
+      "Implement readiness and liveness checks",
+      "Attach a request ID without logging private documents",
+      "Alert on failure rate with a documented response",
+      "Present authenticated RAG with retrieval tests and cited answers"
+    ]
+  },
+  {
+    "id": "week-37",
+    "week": 37,
+    "title": "Observability",
+    "outcome": "Trace a failing request across an AI system.",
+    "topics": [
+      "Log levels",
+      "Correlation IDs",
+      "Trace spans",
+      "Error reports",
+      "Debugging workflow",
+      "Incident review"
+    ],
+    "exercises": [
+      "Write structured logs for one request",
+      "Propagate an ID across API and worker",
+      "Measure retrieval, model and database spans",
+      "Group repeated failures without sensitive payloads",
+      "Reproduce a seeded bug from telemetry",
+      "Write timeline, cause and prevention actions"
+    ]
+  },
+  {
+    "id": "week-38",
+    "week": 38,
+    "title": "Caching and security",
+    "outcome": "Improve efficiency while preserving isolation.",
+    "topics": [
+      "Cache keys",
+      "Invalidation",
+      "Rate limits",
+      "Cost controls",
+      "Security review",
+      "Performance experiment"
+    ],
+    "exercises": [
+      "Include user and version in private cache keys",
+      "Test stale content after document updates",
+      "Implement a token-bucket limiter and test burst capacity, refill timing and separate user quotas.",
+      "Set usage limits and visible error messages",
+      "Check access control and secret handling",
+      "Measure hit rate, latency and correctness together"
+    ]
+  },
+  {
+    "id": "week-39",
+    "week": 39,
+    "title": "Systems architecture",
+    "outcome": "Explain a scalable AI application's tradeoffs.",
+    "topics": [
+      "Requirements",
+      "Component boundaries",
+      "Data flow",
+      "Capacity estimates",
+      "API scalability",
+      "Architecture review"
+    ],
+    "exercises": [
+      "Write functional and nonfunctional requirements",
+      "Separate ingestion, retrieval and inference responsibilities",
+      "Draw synchronous and asynchronous paths",
+      "Estimate requests, storage and token throughput",
+      "Identify bottlenecks before adding replicas",
+      "Compare two designs and justify the simpler sufficient one"
+    ]
+  },
+  {
+    "id": "week-40",
+    "week": 40,
+    "title": "Queues and reliability",
+    "outcome": "Make asynchronous workflows recoverable.",
+    "topics": [
+      "Queue semantics",
+      "Idempotency",
+      "Retries and backoff",
+      "Dead-letter handling",
+      "Load testing",
+      "Failure drills"
+    ],
+    "exercises": [
+      "Explain at-least-once delivery using a duplicate job",
+      "Deduplicate writes with a stable operation key",
+      "Bound retries and add jitter; simulate repeated failures and make the terminal error visible.",
+      "Record and inspect permanently failed jobs",
+      "Measure p50, p95 and error rate under load",
+      "Kill a worker and verify the job resumes safely"
+    ]
+  },
+  {
+    "id": "week-41",
+    "week": 41,
+    "title": "Fine-tuning datasets",
+    "outcome": "Decide whether adaptation is justified.",
+    "topics": [
+      "Adaptation choices",
+      "Data licensing",
+      "Training examples",
+      "Dataset cleaning",
+      "Train and evaluation splits",
+      "Fine-tuning proposal"
+    ],
+    "exercises": [
+      "Compare prompting, retrieval and fine-tuning for a use case",
+      "Record rights and consent for every data source",
+      "Author instruction-response pairs with clear quality criteria",
+      "Remove duplicates and private information",
+      "Split by source to avoid near-duplicate leakage",
+      "Set a baseline, compute budget and stopping criterion"
+    ]
+  },
+  {
+    "id": "week-42",
+    "week": 42,
+    "title": "LoRA and PEFT",
+    "outcome": "Run or design a small parameter-efficient experiment.",
+    "topics": [
+      "Low-rank updates",
+      "Adapter configuration",
+      "Quantization tradeoffs",
+      "Training setup",
+      "Adapter evaluation",
+      "Experiment report"
+    ],
+    "exercises": [
+      "Calculate trainable parameters for two ranks",
+      "Inspect target modules on a small open model",
+      "Estimate memory requirements before loading weights",
+      "Run a tiny local or free-notebook experiment",
+      "Compare base and adapted model on held-out prompts",
+      "Report quality, cost, limitations and reproducibility"
+    ]
+  },
+  {
+    "id": "week-43",
+    "week": 43,
+    "title": "Research reading",
+    "outcome": "Extract claims and evidence from a paper.",
+    "topics": [
+      "Select a paper",
+      "Read abstract critically",
+      "Map the method",
+      "Inspect experiments",
+      "Question limitations",
+      "Write a research brief"
+    ],
+    "exercises": [
+      "Choose an accessible paper with public code",
+      "Separate claims from motivating statements",
+      "Explain the central algorithm in your own words",
+      "Identify baselines, datasets and ablations",
+      "List threats to validity and missing comparisons",
+      "Write a one-page summary with citations and open questions"
+    ]
+  },
+  {
+    "id": "week-44",
+    "week": 44,
+    "title": "Reproduction",
+    "outcome": "Reproduce a bounded experimental claim.",
+    "topics": [
+      "Define scope",
+      "Recreate environment",
+      "Implement a baseline",
+      "Run controlled trials",
+      "Analyze disagreement",
+      "Publish a reproduction note"
+    ],
+    "exercises": [
+      "Select one figure or table within your compute budget",
+      "Record versions, seeds and dataset checksums",
+      "Validate a minimal baseline on a tiny subset before using compute for the full experiment.",
+      "Repeat runs with at least three seeds and report mean and variation, not only the best result.",
+      "Compare errors with the paper's assumptions",
+      "Disclose deviations rather than claiming exact reproduction"
+    ]
+  },
+  {
+    "id": "week-45",
+    "week": 45,
+    "title": "Python interviews",
+    "outcome": "Solve data-structure problems with clear reasoning.",
+    "topics": [
+      "Complexity analysis",
+      "Hash maps and sets",
+      "Stacks and queues",
+      "Linked structures",
+      "Trees",
+      "Timed Python practice"
+    ],
+    "exercises": [
+      "Count operations and distinguish time from space",
+      "Solve two-sum and explain duplicate handling",
+      "Implement balanced-bracket validation",
+      "Reverse a linked list and test an empty list",
+      "Traverse a binary tree breadth-first and depth-first",
+      "Solve two unseen problems then review edge cases"
+    ]
+  },
+  {
+    "id": "week-46",
+    "week": 46,
+    "title": "Algorithms and SQL interviews",
+    "outcome": "Choose algorithms and explain database queries.",
+    "topics": [
+      "Sorting",
+      "Binary search variants",
+      "Recursion",
+      "Joins and aggregation",
+      "Window functions",
+      "Debugging interview"
+    ],
+    "exercises": [
+      "Compare stability and complexity of common sorts",
+      "Find a lower bound with duplicates; test empty arrays, absent targets and boundary positions.",
+      "Write a recursive solution and identify its base case",
+      "Answer a grouped sales query with missing relationships",
+      "Find top records per group with a window function",
+      "Reproduce and repair an unfamiliar bug aloud"
+    ]
+  },
+  {
+    "id": "week-47",
+    "week": 47,
+    "title": "ML system design",
+    "outcome": "Translate a product objective into a measurable ML system.",
+    "topics": [
+      "Problem framing",
+      "Data collection",
+      "Feature pipelines",
+      "Offline evaluation",
+      "Online monitoring",
+      "ML design interview"
+    ],
+    "exercises": [
+      "Define a useful prediction and its business metric",
+      "Specify labels, consent and freshness needs",
+      "Avoid training-serving skew in a feature design",
+      "Choose splits reflecting deployment conditions",
+      "Monitor drift without equating it with failure",
+      "Present a recommendation system and defend tradeoffs"
+    ]
+  },
+  {
+    "id": "week-48",
+    "week": 48,
+    "title": "AI interviews",
+    "outcome": "Explain AI architecture and collaborate under uncertainty.",
+    "topics": [
+      "RAG design interview",
+      "Agent safety interview",
+      "Serving tradeoffs",
+      "Project storytelling",
+      "Behavioral practice",
+      "Mock interview"
+    ],
+    "exercises": [
+      "Design retrieval for a changing document collection",
+      "Explain permissions and approval boundaries",
+      "Compare hosted and local inference constraints",
+      "Tell a project story with measured evidence",
+      "Prepare situation, action and result examples",
+      "Record a mock session and identify three improvements"
+    ]
+  },
+  {
+    "id": "week-49",
+    "week": 49,
+    "title": "Capstone engineering",
+    "outcome": "Close the highest-value gaps in a real workflow.",
+    "topics": [
+      "User feedback",
+      "Scope selection",
+      "Implementation",
+      "Integration tests",
+      "Failure handling",
+      "Release candidate"
+    ],
+    "exercises": [
+      "Interview a consenting user about one workflow",
+      "Rank issues by user impact and effort",
+      "Implement one coherent improvement from user feedback and demonstrate behavior before and after.",
+      "Test API, database and tool boundaries",
+      "Demonstrate recovery from a realistic failure",
+      "Freeze a candidate and write known limitations"
+    ]
+  },
+  {
+    "id": "week-50",
+    "week": 50,
+    "title": "Open source and writing",
+    "outcome": "Contribute a reviewable change and explain your work.",
+    "topics": [
+      "Find a contribution",
+      "Reproduce an issue",
+      "Prepare a patch",
+      "Review feedback",
+      "Technical case study",
+      "Publish evidence"
+    ],
+    "exercises": [
+      "Read contribution rules and choose a small issue",
+      "Create a minimal reproduction with expected behavior",
+      "Add a focused fix with meaningful tests",
+      "Respond constructively and revise the patch",
+      "Explain problem, design, evaluation and tradeoffs",
+      "Link commits, experiments and screenshots in a portfolio"
+    ]
+  },
+  {
+    "id": "week-51",
+    "week": 51,
+    "title": "Portfolio and recruitment",
+    "outcome": "Present honest evidence of engineering competence.",
+    "topics": [
+      "Repository polish",
+      "Project demos",
+      "Resume evidence",
+      "Role research",
+      "Interview rehearsal",
+      "Application batch"
+    ],
+    "exercises": [
+      "Make three repositories runnable from clean setup",
+      "Record short demos including failure cases",
+      "Write outcome bullets without invented metrics",
+      "Map five real roles to required skills and connect every claimed skill to portfolio evidence.",
+      "Explain one project's hardest tradeoff in five minutes",
+      "Send tailored applications and record follow-up dates"
+    ]
+  },
+  {
+    "id": "week-52",
+    "week": 52,
+    "title": "Final review",
+    "outcome": "Assess demonstrated skills and plan the next learning cycle.",
+    "topics": [
+      "Programming assessment",
+      "ML assessment",
+      "AI systems assessment",
+      "Capstone presentation",
+      "Career readiness review",
+      "Next-quarter plan"
+    ],
+    "exercises": [
+      "Solve an unseen task with tests and explanation",
+      "Audit a model experiment for leakage and metric choice",
+      "Design a grounded, permission-aware assistant",
+      "Present user need, architecture, evidence and limitations",
+      "Identify skills supported by evidence and remaining gaps",
+      "Choose three measurable goals based on actual results"
+    ]
+  }
+]
